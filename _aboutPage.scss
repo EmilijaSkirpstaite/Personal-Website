@@ -1,0 +1,59 @@
+@import "variables";
+
+
+.a-p-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    flex-wrap: wrap;
+    z-index: 1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.a-p-container .card {
+    position: relative;
+    width: 50rem;
+    height: 30rem;
+    margin: 1.9rem;
+    box-shadow: 1.25rem 1.25rem 3.125rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.4rem);
+}
+
+.a-p-container .card .card-content {
+    padding: 2.5rem;
+    transform: translateY(6.25rem);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.a-p-container .card:hover .card-content {
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+.a-p-container .card .card-content h2 {
+    //color: $pink;
+    font-size: 3rem;
+}
+
+.a-p-container .card .card-content p {
+    color: $light-grey;
+    font-size: 1.6rem;
+}
+
+.a-p-container .card .card-content #p2 {
+    color: $pink;
+    font-size: 2rem;
+}
+
+

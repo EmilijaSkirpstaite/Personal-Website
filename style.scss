@@ -1,0 +1,97 @@
+@import "neonButton";
+@import "variables";
+@import "header";
+@import "aboutPage";
+@import "projects";
+@import "contactPage";
+
+html {
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: y proximity;
+        overflow-y: scroll;
+        background-color: $dark-grey;
+
+        section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: calc(100vh - 80px);
+            scroll-snap-align: start;
+            //scroll-margin-top: 80px;
+
+            &:nth-of-type(1) {
+                background-color: $dark-grey;
+            }
+
+            //about page
+            &:nth-of-type(2) {
+                color: $pink; 
+                 
+                #aboutpage {
+                    position: absolute;
+                    padding: 30px;
+                    left: 1em;
+                    top: -6rem;
+                }
+
+                #aboutpage2 {
+                    position: absolute;
+                    padding: 30px;
+                    left: 1em;
+                    bottom: -6rem;
+                } 
+            }
+
+            //portfolio
+            &:nth-of-type(3) {
+                color: $pink;
+
+                #projects {
+                    position: absolute;
+                    padding: 30px;
+                    left: 1em;
+                    top: -6rem;
+                }
+//
+                #projects2 {
+                    position: absolute;
+                    padding: 30px;
+                    left: 1em;
+                    bottom: -6rem;
+                } 
+
+            }
+
+            &:nth-of-type(4) {
+                color: $pink;
+            }
+
+            h1 {
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 1.4rem;
+                
+            }
+
+        }
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
+        
+        <title>Emilija's Website</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-links">
+                <a href="#aboutpage">ABOUT</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <section>
+                <a href="#aboutpage" class="neon-button">emilija_skirpstaite</a>
+            </section>
+
+            <section>
+                <div class="a-p-container">
+                    <h1 id="aboutpage">&lt;about page&gt;</h1>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>Hi,</h2>
+                                <h2>I'm Emilija :)</h2>
+                                <p>I am a computer science student at the University of Lincoln.  With an interest in web development, cyber security and programming.</p>
+                                <p id="p2"><br/><strong>&lt;/web developer&gt;</strong> &nbsp; <strong>&lt;/student&gt;</strong></p>
+                            </div>
+                        </div>
+                    <h1 id="aboutpage2">&lt;/about page&gt;</h1>
+                </div>
+            </section>
+
+            <section>
+                <div class="p-container">
+                    <h1 id="projects">&lt;projects&gt;</h1>
+                        <!--<h1 id="current">&lt;current work&gt;</h1>-->
+                            <div class="card">
+                                <div class="card-content">
+                                    <h2>Commercial Website</h2>
+                                    <p><br/><br/>I have started to develop a website for a startup commercial enterprise that will allow it to reach new customers as well as establish better relationships with its current ones.</p>
+                                    <p id="p2"><br/><br/><strong>&lt;/HTML&gt;</strong> &nbsp; <strong>&lt;/CSS&gt;</strong> &nbsp; <strong>&lt;/SASS&gt;</strong> &nbsp; <strong>&lt;/JS&gt;</strong></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <h2>Robotics/ Programming</h2>
+                                    <p><br/>As part of my university course I am currently developing a fully autonomous robot that will be capable of driving through complex structures and narrow spaces until it reaches its designated target.</p>
+                                </div>
+                            </div>
+                        <!--<h1 id="current2">&lt;/current work&gt;</h1>-->
+                    
+                        <!--<h1 id="past">&lt;past work&gt;</h1>-->
+                            <div class="card">
+                                <div class="card-content">
+                                    <h2>Random maze generator</h2>
+                                    <p>Maze generator created in python using a randomised depth-first search algorithm that generates random mazes of various sizes.</p>
+                                    <p id="p2"><br/><strong>&lt;/Python&gt;</strong> &nbsp; <strong>&lt;/Algorithms&gt;</strong></p>
+                                    <a href="https://github.com/EmilijaSkirpstaite/maze-generator">GitHub Code</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <h2>Noughts and crosses game</h2>
+                                    <p>A noughts and crosses game created in python with two game modes: PvP and PvC.</p>
+                                    <p id="p2"><br/><br/><strong>&lt;/Python&gt;</strong></p>
+                                    <a href="https://github.com/EmilijaSkirpstaite/Noughts-and-Crosses">GitHub Code</a>
+                                </div>
+                            </div>
+                        <!--<h1 id="past2">&lt;/past work&gt;</h1>-->
+                    <h1 id="projects2">&lt;/projects&gt;</h1>
+                </div>
+            </section>
+            
+            <!--onsubmit="event.preventDefault(); validateForm(); reset(); return false;"-->
+            <section>
+                <div class="c-container">
+
+                    <!--
+                    <form  action="https://formsubmit.co/emilijaskirpstaite@gmail.com" method="POST">
+                        <h1 id="contact-h1">Contact Me</h1>
+
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                        <small class="error"></small>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <small class="error"></small>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+                        <small class="error"></small>
+
+                        <div class="center">
+                            <input type="submit" value="Send Message">
+                            <p id="success"></p>
+                        </div>
+                    </form>
+                    -->
+
+                    <form  action="mail.php" method="POST">
+                        <h1 id="contact-h1">Contact Me</h1>
+
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                        <small class="error"></small>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <small class="error"></small>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+                        <small class="error"></small>
+
+                        <div class="center">
+                            <input type="submit" value="Send Message">
+                            <p id="success"></p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </section>
+        </div>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), 
+            {
+            max: 8,
+            speed: 200,
+            });
+        </script>
+        <script src="script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </body>
+</html

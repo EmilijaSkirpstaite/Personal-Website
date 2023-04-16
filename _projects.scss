@@ -1,0 +1,66 @@
+@import "variables";
+
+
+.p-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100rem;
+    //flex-wrap: wrap;
+    //z-index: 1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.p-container .card {
+    position: relative;
+    width: 30rem;
+    height: 24rem;
+    margin: 1rem;
+    box-shadow: 1.25rem 1.25rem 3.125rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.4rem);
+}
+
+.p-container .card .card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.p-container .card .card-content h2 {
+    font-size: 2rem;
+}
+
+.p-container .card .card-content p {
+    color: $light-grey;
+    font-size: 1.2rem;
+}
+
+.p-container .card .card-content #p2 {
+    color: $pink;
+    font-size: 1.2rem;
+}
+
+.p-container .card .card-content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: $light-grey;
+    color: $dark-grey;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.p-container .card .card-content a:hover {
+    background: $pink;
+}
